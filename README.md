@@ -1,3 +1,3 @@
 # Francisco's Personal Website
 This is a personal website built using the Hack4Impact Starter Pack!
-This website will inform you on my projects and knowledge of the technical world!
+This website will be my practice for learning git, HTML, and CSS.
