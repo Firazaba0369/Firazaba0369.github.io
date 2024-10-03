@@ -4,6 +4,9 @@
     --cg-blue: rgb(36, 94, 255);
     --cg-grey: rgb(243, 243, 243);
     --cg-white: rgb(255, 255, 255);
+    --cg-indigo: 	rgb(29, 66, 80);
+    --cg-light-silver: rgb(204, 228, 211);
+    --cg-silver-lake-blue: rgb(85, 136, 198);
   }
   
   html {
@@ -34,7 +37,7 @@
     align-items: center;
     text-align: center;
   
-    background-color: var(--cg-black);
+    background-color: var(--cg-indigo);
     color: var(--cg-white);
     padding: 0px 0px;
   
@@ -54,7 +57,7 @@
   }
   
   .navbar a {
-    color: var(--cg-white);
+    color: var(--cg-light-silver);
     font-weight: bold;
     margin: 0 12px;
     text-decoration: none;
@@ -64,12 +67,12 @@
   }
   
   .navbar a:hover {
-    color: var(--cg-blue);
+    color: var(--cg-silver-lake-blue);
     text-decoration: underline;
   }
   
   .navbar a:active {
-    color: var(--cg-blue);
+    color: var(--cg-silver-lake-blue);
   }
   
   .logo a {
@@ -81,7 +84,7 @@
   }
   
   main {
-    padding: 0 20px 40px 20px;
+    padding: 0 200px 40px 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,10 +92,17 @@
   }
   
   .page-title {
+    color: var(--cg-indigo);
     display: flex;
     justify-content: center;
     font-size: 40px;
     font-family: Georgia;
+  }
+
+  .section-title, .entry-title, 
+  .entry-info, .entry-description, 
+  .skill-list, .skill-title {
+    color: var(--cg-indigo);
   }
   
   /* CSS for portfolio grid */
@@ -109,7 +119,7 @@
   
   .item-link {
     width: 70%;
-  
+
     /* Debug border */
     /* border: 2px solid red; */
   }
@@ -117,7 +127,7 @@
   .project-image {
     object-fit: cover;
     width: 100%;
-    height: 500px;
+    height: 400px;
     flex-basis: 50px;
     flex-grow: 2;
   
@@ -127,9 +137,9 @@
   
   .project-details {
     display: flex;
-    background-color: var(--cg-white);
+    background-color: var(--cg-light-silver);
     width: 30%;
-    height: 500px;
+    height: 400px;
     flex-shrink: 1;
     padding: 0 20px;
     margin: 0px;
@@ -144,8 +154,11 @@
     /* border: 2px solid green; */
   }
   
+  .project-description{
+    color: var(--cg-indigo);
+  }
   .project-details a {
-    color: var(--cg-black);
+    color: var(--cg-indigo);
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
@@ -161,9 +174,12 @@
   }
   
   .project-name {
+    color: var(--cg-indigo);
     font-weight: bold;
     font-size: 20px;
   }
+
+
   
   /* CSS for home page */
   
@@ -172,29 +188,36 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: var(--cg-light-silver);
     border: 1px solid #ccc;
-    border-radius: 5px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 40px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1); 
   }
   
   .about-image img {
     max-width: 300px;
-    border-radius: 3px;
+    border-radius: 30px;
+    border: outset;
+    
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
   }
-  
+  .about-heading{
+    color: var(--cg-indigo);
+  }
   .about-text {
+    color: var(--cg-indigo);
     flex: 1;
     margin-left: 20px;
   }
   
   .about-text h2 {
+    color: var(--cg-indigo);
     font-size: 24px;
     margin-bottom: 10px;
   }
   
   .about-text p {
+    color: var(--cg-silver-indigo);
     font-size: 16px;
     line-height: 1.5;
   }
@@ -202,9 +225,9 @@
   /* CSS for resume page */
   
   .button {
-    background-color: var(--cg-black);
+    background-color: var(--cg-indigo);
     border: none;
-    color: var(--cg-white);
+    color: var(--cg-light-silver);
   
     font-family: monospace;
   
@@ -215,7 +238,7 @@
   }
   
   .button:hover {
-    background-color: var(--cg-blue);
+    background-color: var(--cg-silver-lake-blue);
   }
   
   .resume h2 {
@@ -225,6 +248,7 @@
   /* CSS for contact form */
   
   label {
+    color: var(--cg-indigo);
     display: block;
     margin-bottom: 8px;
     font-family: Georgia;
@@ -255,8 +279,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cg-black);
-    color: var(--cg-white);
+    background-color: var(--cg-indigo);
+    color: var(--cg-light-silver);
     position: absolute;
     bottom: 0;
     width: 100%;
